@@ -158,7 +158,7 @@ try:
 except:
     pass
 
-server = websockets.serve(oc, port = 9003)
+server = websockets.serve(oc, port = 8080)
 
 asyncio.get_event_loop().run_until_complete(server)
 asyncio.get_event_loop().run_forever()
